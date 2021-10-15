@@ -8,15 +8,17 @@
         <th clspan="3"></th>
       </tr>
     </thead>
-    <tbody>
-     <tr>
-       <td>a</td>
-       <td>a</td>
-       <td>Show</td>
-       <td>Edit</td>
-       <td>Destroy</td>
-     </tr>
-    </tbody>
+    <% @books.each do |book| %>
+      <tbody>
+       <tr>
+         <td><%= book.title %></td>
+         <td><%= book.body %></td>
+         <td>Show</td>
+         <td>Edit</td>
+         <td>Destroy</td>
+       </tr>
+      </tbody>
+    <% end %>
   </table>
 </div>
 
