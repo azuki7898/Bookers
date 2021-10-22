@@ -28,6 +28,10 @@ p,ul {
   margin: 30px;
 }
 
+li {
+  list-style-position: inside;
+}
+
 
 .flash{
   color: green;
@@ -67,9 +71,7 @@ label {
   margin: 0;
 }
 
-li {
-  list-style-position: inside;
-}
+
 
 .field_with_errors {
   background-color: red;
