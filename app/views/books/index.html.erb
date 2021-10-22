@@ -14,7 +14,7 @@
        <tr>
          <td><%= book.title %></td>
          <td><%= book.body %></td>
-         <td><%= link_to 'Show', show_book_path(book) %></td>
+         <td><%= link_to 'Show', book_path(book) %></td>
          <td><%= link_to 'Edit', edit_book_path(book) %></td>
          <td><%= link_to 'Destroy', destroy_book_path(book), method: :delete, "data-confirm" => "Are you sure?" %></td>
        </tr>
@@ -48,7 +48,7 @@
     </div>
 
    <div class="buttun">
-     <%= f.submit 'Create book' %>
+     <%= f.submit 'Create Book' %>
    </div>
   <% end %>
 </div>
