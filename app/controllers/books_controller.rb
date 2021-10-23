@@ -37,7 +37,7 @@ class BooksController < ApplicationController
     book = Book.find(params[:id])
     if book.destroy
       flash[:notice] = 'Book was successfully destroyed'
-      redirect_to book_path
+      redirect_to books_path
     end
   end
 
